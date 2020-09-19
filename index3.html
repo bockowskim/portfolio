@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size: 40px;
+        height: 300vh;
+
+    }
+
+    p {
+        position: fixed;
+    }
+</style>
+
+<body>
+    <p>skrolujesz o <span class="height">0</span>px</p>
+    <script>
+        const scrollSize = document.querySelector('.height')
+
+        document.addEventListener('scroll', function () {
+            scrollSize.textContent = window.scrollY;
+        })
+    </script>
+</body>
+
+</html>
